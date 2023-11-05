@@ -1,0 +1,19 @@
+<div class="grid">
+    <label 
+        for={{name}}>
+        {{value}}:
+    </label>
+    <input 
+        id={{name}} 
+        type={{type}} 
+        name={{name}} 
+        placeholder={{place}}
+        maxlength="25"
+        (input)="onChange($event)"
+        data-valid="zero"
+        required>
+    <div id={{errorName}} 
+        class="error hidden">
+        {{errorText}}
+    </div>
+</div>

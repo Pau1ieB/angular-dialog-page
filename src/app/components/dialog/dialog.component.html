@@ -1,0 +1,47 @@
+<main>
+    <form>
+        <div class="content">
+            <app-input-box 
+                type="text" 
+                name="name" 
+                value="Name" 
+                place="Enter Your Name" 
+                pattern="^[A-Za-z ]+$"
+                errorName="error-name"
+                errorText="Please add a valid name as it appears on your credit card (A-Z,a-z,<space> only)"
+                errorAlert="true"
+                (inputChange)="validate($event)">
+            </app-input-box>
+        </div>
+        <div class="content">
+            <app-input-box 
+                type="email" 
+                name="email" 
+                value="Email" 
+                place="Enter Your Email"
+                errorName="error-email"
+                errorText="Please add a valid email address"
+                
+                (inputChange)="validate($event)">
+            </app-input-box>
+        </div>
+        <div class="content">
+            <app-cc-input-box 
+                type="text" 
+                name="card" 
+                value="Card" 
+                place="Enter a Proxy Credit Card Number" 
+                pattern="^[\d]+$"
+                errorName="error-card"
+                errorText="Please add a valid Debit or Credit Card number (numerals only, no spaces)"
+                (inputChange)="validateCard($event)">
+            </app-cc-input-box>
+        </div>
+    </form>
+    <div role="alert" id="error-form" class="error hidden" aria-label=""></div>
+    <div class="content">
+        <app-input-submit
+            (submitForm)="onSubmit($event)">
+        </app-input-submit>
+    </div>
+</main>

@@ -1,0 +1,7 @@
+main{
+    width:23rem;
+    border-radius: 2rem;
+    border:10px solid;
+    background-color: var(--dn-green);
+    padding:2em 2em 0.5em 2em;
+}

@@ -1,0 +1,14 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"]{
+    font-size: 22px;
+    font-weight: 500;
+    background-color: var(--dn-pink);
+    border-radius: 0.35em;
+    border:2px solid;
+    padding:0.25em 1.5em;
+}

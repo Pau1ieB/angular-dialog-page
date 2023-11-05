@@ -1,0 +1,39 @@
+.p-rel{
+    position: relative;
+}
+
+.valid-card{
+    position:absolute;
+    top:0;
+    right:0;
+    width:120px;
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+
+#card-length{
+    padding-right:0.25em
+}
+
+.img-div{
+    height:90%;
+    width:80px;
+    background-size: 100% 100%;
+}
+ 
+.img-amex{
+    background-image: url('../../../assets/images/amex.png');
+}
+
+.img-discover{
+    background-image: url('../../../assets/images/discover.png');
+}
+
+.img-mcard{
+    background-image: url('../../../assets/images/mcard.png');
+}
+
+.img-visa{
+    background-image: url('../../../assets/images/visa.png');
+}

@@ -1,0 +1,24 @@
+.grid{
+    display: grid;
+    grid-template-columns: 3em 1fr;
+}
+
+label{
+    color:var(--dn-grey);
+    align-self: center;
+    font-family: calibri;
+}
+
+input[type="text"],input[type="email"]{
+    padding-left:0.5em;
+    font-weight: 500;
+    width:100%;
+}
+
+.bg-valid{
+    background-color: var(--dn-green);
+}
+
+.bg-invalid{
+    background-color: var(--dn-pink);
+}

@@ -1,0 +1,26 @@
+<div class="grid">
+    <label 
+        for={{name}}>
+        {{value}}:
+    </label>
+    <div class="p-rel">
+        <input 
+            id={{name}} 
+            type={{type}} 
+            name={{name}} 
+            type="text" 
+            placeholder={{place}}
+            maxlength="16"
+            (input)="onChange($event)"
+            data-valid="zero">
+        <div id="card-type" data-show="false" class="hidden">
+            <div id="card-image" class="img-div"></div>
+            <div id="card-length">16/16</div>
+        </div>            
+    </div>
+    <div id={{errorName}}
+        role="alert" 
+        class="error hidden">
+        {{errorText}}
+    </div>
+</div>
